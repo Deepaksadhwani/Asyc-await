@@ -1,8 +1,6 @@
-// Assuming you have createPost and deletePost functions with asynchronous operations
 
 const createPost = async () => {
     return new Promise((resolve, reject) => {
-        // Replace the following setTimeout with your actual asynchronous operation
         setTimeout(() => {
             resolve('Post created successfully');
         }, 2000);
@@ -11,7 +9,6 @@ const createPost = async () => {
 
 const deletePost = async () => {
     return new Promise((resolve, reject) => {
-        // Replace the following setTimeout with your actual asynchronous operation
         setTimeout(() => {
             resolve('Post deleted successfully');
         }, 1500);
@@ -47,8 +44,8 @@ const preMovie = async () => {
 
 const asyncFunction = async () => {
     try {
-        const result1 = await createPost(); // Replace with actual implementation
-        const result2 = await deletePost(); // Replace with actual implementation
+        const result1 = await createPost(); 
+        const result2 = await deletePost(); 
         console.log(result1);
         console.log(result2);
     } catch (error) {
